@@ -1,0 +1,132 @@
+body {
+  text-align: center;
+}
+
+main {
+  width: 500px;
+  height: 100vh;
+  margin: 100px auto;
+  position: relative;
+  height: 420px;
+  width: 500px;
+}
+
+.neko {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(175, 175, 175);
+  border-radius: 50%;
+}
+
+right[name="eye"],
+left[name="eye"] {
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: black;
+  top: 190px;
+  z-index: 100;
+}
+
+right[name="eye"] {
+  right: 110px;
+}
+
+left[name="eye"] {
+  left: 110px;
+}
+
+.nose {
+  position: absolute;
+  height: 50px;
+  width: 70px;
+  left: 215px;
+  border-radius: 50%;
+  background-color: black;
+  top: 260px;
+}
+
+.mouse {
+  position: absolute;
+  font-size: 3rem;
+  top: 300px;
+}
+
+right[name="cheek"],
+left[name="cheek"] {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 149, 167, 0.731);
+  top: 240px;
+}
+
+right[name="cheek"] {
+  right: 60px;
+}
+
+left[name="cheek"] {
+  left: 60px;
+}
+
+.ear {
+  background: rgb(175, 175, 175);
+}
+
+right[name="ear"],
+left[name="ear"] {
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  clip-path: polygon(50% 40%, 0% 100%, 100% 100%);
+  top: -120px;
+}
+
+right[name="ear"] {
+  right: 10px;
+  transform: rotate(25deg);
+}
+left[name="ear"] {
+  left: 10px;
+  transform: rotate(-25deg);
+}
+
+.beard {
+  height: 7px;
+  width: 120px;
+  background: black;
+  position: absolute;
+  border-radius: 50px;
+}
+
+#r-1,
+#r-2 {
+  left: -30px;
+}
+
+#l-1,
+#l-2 {
+  right: -30px;
+}
+
+#r-1 {
+  top: 240px;
+  transform: rotate(7deg);
+}
+
+#r-2 {
+  top: 290px;
+  transform: rotate(-7deg);
+}
+
+#l-2 {
+  top: 240px;
+  transform: rotate(-7deg);
+}
+
+#l-1 {
+  top: 290px;
+  transform: rotate(7deg);
+}
